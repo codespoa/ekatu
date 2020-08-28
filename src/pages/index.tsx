@@ -39,7 +39,6 @@ const Home: React.FC = ({ justify }: Props) => {
           support="Soluções exclusivas em energia"
           textButton="Leia mais"
           justify={justify}
-          background="red"
         ></Energia>
       </ContainerEnergia>
 
@@ -47,6 +46,24 @@ const Home: React.FC = ({ justify }: Props) => {
         <Energia
           textMain="Energia Solar"
           textSeccond="Energia solar fotovoltaica é a energia obtida através da conversão direta da luz solar em eletricidade."
+          textButton="Leia mais"
+          justify={justify}
+        ></Energia>
+      </RevertContainerEnergia>
+
+      <ContainerEnergia>
+        <Energia
+          textMain="Biogás"
+          textSeccond="Transforma gases poluentes de aterros sanitários em energia limpa."
+          textButton="Leia mais"
+          justify={justify}
+        ></Energia>
+      </ContainerEnergia>
+
+      <RevertContainerEnergia>
+        <Energia
+          textMain="Bateria"
+          textSeccond="Dispositivo eletroquímico de duas ou mais células para armazenamento de energia elétrica."
           textButton="Leia mais"
           justify={justify}
         ></Energia>
