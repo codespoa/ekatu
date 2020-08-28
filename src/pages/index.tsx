@@ -5,9 +5,13 @@ import 'styled-components'
 import Header from '../components/Header'
 import Reduza from '../components/Reduza'
 import Energia from '../components/Energia'
+import Footer from '../components/Footer'
+import BottomFooter from '../components/BottomFooter'
 
 import { ContainerHeader } from '../styles/pages/Home'
 import { ContainerReduza } from '../styles/pages/Reduza'
+import { ContainerFooter, ContainerBottomFooter } from '../styles/pages/Footer'
+
 import {
   ContainerEnergia,
   RevertContainerEnergia
@@ -68,6 +72,14 @@ const Home: React.FC = ({ justify }: Props) => {
           justify={justify}
         ></Energia>
       </RevertContainerEnergia>
+
+      <ContainerFooter>
+        <Footer />
+      </ContainerFooter>
+
+      <ContainerBottomFooter>
+        <BottomFooter />
+      </ContainerBottomFooter>
     </>
   )
 }

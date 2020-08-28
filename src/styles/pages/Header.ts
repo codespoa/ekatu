@@ -1,13 +1,13 @@
 import styled from 'styled-components'
 
-export const HeaderStyle = styled.div`
+export const HeaderStyle = styled.section`
   display: flex;
   align-items: center;
 
   div {
     margin-right: 50px;
 
-    @media (min-with: 1300px) {
+    @media (min-width: 1300px) {
       margin-right: 200px;
     }
   }

@@ -1,6 +1,7 @@
 import styled from 'styled-components'
+import img from '../../assets/new-fundo-page.png'
 
-export const ContainerEnergia = styled.div`
+export const ContainerEnergia = styled.section`
   width: 100%;
   height: 100vh;
   padding: 50px 0;
@@ -8,6 +9,9 @@ export const ContainerEnergia = styled.div`
   justify-content: space-evenly;
   position: relative;
   flex: 1;
+  background-image: none;
+  background-position: center;
+  background-size: contain;
 
   @media (min-width: 1024px) {
     margin: 0 auto;
@@ -25,7 +29,6 @@ export const ContainerEnergia = styled.div`
     .solucaoExclusiva {
       display: flex;
       align-items: center;
-
 
       svg {
         margin-right: 20px;
@@ -104,7 +107,7 @@ export const ContainerEnergia = styled.div`
 
   .imageDown {
     position: absolute;
-    bottom: 25px;
+    bottom: 65px;
     left: 0;
     right: 0;
     display: flex;
@@ -113,6 +116,8 @@ export const ContainerEnergia = styled.div`
 `
 
 export const RevertContainerEnergia = styled(ContainerEnergia)`
+  /* background: red; */
+  background-image: url(${img});
   .boxText {
     order: 2;
   }

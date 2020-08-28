@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const ContainerReduza = styled.div`
+export const ContainerReduza = styled.section`
   width: 100%;
   display: flex;
   justify-content: center;
