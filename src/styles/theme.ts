@@ -1,8 +1,17 @@
 const theme = {
   colors: {
-    background: '#121214',
-    text: '#e1e1e6',
-    primary: '#8257e6'
+    background: '#F5F7FB',
+    text: '#868DA5;',
+    primary: '#474A56',
+    white: '#fff',
+    purple: '#435EBE',
+    green: '#6DE969',
+    grey: '#73788C',
+    grey200: '#DEDFE3'
+  },
+
+  position: {
+    reverse: 'row-reverse'
   }
 }
 

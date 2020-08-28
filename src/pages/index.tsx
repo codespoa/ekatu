@@ -1,21 +1,57 @@
 import React from 'react'
 import Head from 'next/head'
+import 'styled-components'
 
-import RocketseatLogo from '../assets/rocketseat.svg'
+import Header from '../components/Header'
+import Reduza from '../components/Reduza'
+import Energia from '../components/Energia'
 
-import { Container } from '../styles/pages/Home'
+import { ContainerHeader } from '../styles/pages/Home'
+import { ContainerReduza } from '../styles/pages/Reduza'
+import {
+  ContainerEnergia,
+  RevertContainerEnergia
+} from '../styles/pages/Energia'
 
-const Home: React.FC = () => {
+type Props = {
+  justify: boolean
+}
+
+const Home: React.FC = ({ justify }: Props) => {
   return (
-    <Container>
+    <>
       <Head>
-        <title>Homepage</title>
+        <title>Ekatu - Soluções exclusivas em energia</title>
       </Head>
 
-      <RocketseatLogo />
-      <h1>ReactJS Structure</h1>
-      <p>A ReactJS + Next.js structure made by Rocketseat.</p>
-    </Container>
+      <ContainerHeader>
+        <Header />
+      </ContainerHeader>
+
+      <ContainerReduza>
+        <Reduza />
+      </ContainerReduza>
+
+      <ContainerEnergia>
+        <Energia
+          textMain="Energia Eólica"
+          textSeccond="Transformação da energia do vento em energia útil."
+          support="Soluções exclusivas em energia"
+          textButton="Leia mais"
+          justify={justify}
+          background="red"
+        ></Energia>
+      </ContainerEnergia>
+
+      <RevertContainerEnergia>
+        <Energia
+          textMain="Energia Solar"
+          textSeccond="Energia solar fotovoltaica é a energia obtida através da conversão direta da luz solar em eletricidade."
+          textButton="Leia mais"
+          justify={justify}
+        ></Energia>
+      </RevertContainerEnergia>
+    </>
   )
 }
 

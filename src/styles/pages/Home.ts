@@ -1,23 +1,19 @@
 import styled from 'styled-components'
 
-export const Container = styled.div`
-  width: 100vw;
-  height: 100vh;
-
+export const ContainerHeader = styled.div`
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  padding: 35px 0;
 
-  h1 {
-    font-size: 54px;
-    color: ${props => props.theme.colors.primary};
-    margin-top: 40px;
+  @media (min-width: 998px) {
+    margin: 0 auto;
+    align-items: center;
   }
 
-  p {
-    margin-top: 24px;
-    font-size: 24px;
-    line-height: 32px;
+  @media (min-width: 1600px) {
+    max-width: 1400px;
+    margin: 0 auto;
   }
 `

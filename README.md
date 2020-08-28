@@ -36,7 +36,7 @@ yarn install / npm install
 ## :computer: Executando o projeto
 
 ```bash
-yarn start / npm run start
+yarn next dev / npm run next dev
 ```
 
 Após iniciar o projeto, o servidor estará disponivel em [localhost:3000](http://localhost:3000/)
