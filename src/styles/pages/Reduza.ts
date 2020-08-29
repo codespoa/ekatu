@@ -10,6 +10,7 @@ export const ContainerReduza = styled.section`
   padding-top: 0;
   padding-bottom: 0;
   flex-wrap: wrap;
+  overflow: hidden;
 
   @media (min-width: 1024px) {
     margin: 0 auto;

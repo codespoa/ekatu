@@ -6,12 +6,14 @@ import Header from '../components/Header'
 import Reduza from '../components/Reduza'
 import Energia from '../components/Energia'
 import QuemSomos from '../components/QuemSomos'
+import Sustentavel from '../components/Sustentavel'
 import Footer from '../components/Footer'
 import BottomFooter from '../components/BottomFooter'
 
 import { ContainerHeader } from '../styles/pages/Home'
 import { ContainerReduza } from '../styles/pages/Reduza'
 import { ContainerQuemSomos } from '../styles/pages/QuemSomos'
+import { ContainerSustentavel } from '../styles/pages/Sustentavel'
 import { ContainerFooter, ContainerBottomFooter } from '../styles/pages/Footer'
 
 import {
@@ -97,6 +99,10 @@ const Home: React.FC = () => {
           imgTraco={imageTraco}
         ></QuemSomos>
       </ContainerQuemSomos>
+
+      <ContainerSustentavel>
+        <Sustentavel />
+      </ContainerSustentavel>
 
       <ContainerFooter>
         <Footer />

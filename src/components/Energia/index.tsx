@@ -19,12 +19,17 @@ const Energia: React.FC = ({
   support,
   textButton,
   imgTraco,
-  imageContent,
+  imageContent
 }: EnergiaProps) => {
   const [textSupport, setTextSupport] = useState(support)
 
   return (
     <ContainerEnergia>
+      <div className="ocean">
+        <div className="wave"></div>
+        <div className="wave"></div>
+      </div>
+
       <div className="boxText">
         <div className="solucaoExclusiva">
           <img

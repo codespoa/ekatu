@@ -17,7 +17,7 @@ export const ContainerEnergia = styled.section`
   @media (min-width: 1024px) {
     margin: 0 auto;
     align-items: top;
-    padding: 50px;
+    padding: 50px 20px;
     max-width: 1500px;
   }
 
@@ -65,6 +65,7 @@ export const ContainerEnergia = styled.section`
     .text {
       @media (min-width: 1024px) {
         margin-top: 100px;
+        padding: 0 50px;
       }
 
       @media (min-width: 1300px) {
@@ -79,12 +80,16 @@ export const ContainerEnergia = styled.section`
         color: ${props => props.theme.colors.primary};
 
         @media (min-width: 1300px) {
-          max-width: 590px;
+          max-width: 560px;
         }
       }
 
       p {
         color: ${props => props.theme.colors.text};
+
+        @media (min-width: 1024px) {
+          margin: 50px 0 130px;
+        }
 
         @media (min-width: 1300px) {
           font-size: 22px;
@@ -109,6 +114,7 @@ export const ContainerEnergia = styled.section`
 
         p {
           color: ${props => props.theme.colors.white};
+          margin: 0;
           margin-right: 20px;
         }
       }
@@ -120,6 +126,10 @@ export const ContainerEnergia = styled.section`
     align-items: center;
     justify-content: center;
     width: 100%;
+
+    @media (min-width: 1024px) {
+      padding: 0 20px;
+    }
 
     @media (min-width: 1200px) {
       width: 50%;
@@ -134,6 +144,49 @@ export const ContainerEnergia = styled.section`
     display: flex;
     justify-content: center;
   }
+
+  /*.ocean {
+    background: #f5f7fb;
+    height: 10%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+
+  }
+   .wave {
+    background: url('https://venkat369.github.io/development/wave.svg') repeat-x;
+    position: absolute;
+    top: -198px;
+    width: 6400px;
+    height: 198px;
+    animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+    transform: translate3d(0, 0, 0);
+  }
+  .wave:nth-of-type(2) {
+    top: -175px;
+    animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) -0.125s infinite,
+      swell 7s ease -1.25s infinite;
+    opacity: 1;
+  }
+  @keyframes wave {
+    0% {
+      margin-left: 0;
+    }
+    100% {
+      margin-left: -1600px;
+    }
+  }
+  @keyframes swell {
+    0%,
+    100% {
+      transform: translate3d(0, -25px, 0);
+    }
+    50% {
+      transform: translate3d(0, 5px, 0);
+    }
+  } */
 `
 
 export const RevertContainerEnergia = styled(ContainerEnergia)`

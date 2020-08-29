@@ -15,7 +15,6 @@ export const ContainerHeader = styled.section`
   @media (min-width: 1600px) {
     max-width: 1500px;
     margin: 0 auto;
-    padding: 0;
   }
 
   @media (min-width: 1900px) {
