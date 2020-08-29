@@ -10,15 +10,17 @@ export const ContainerFooter = styled.section`
   align-items: flex-end;
   flex-direction: column;
   justify-content: flex-end;
-  background-size: contain;
+  background-size: cover;
   padding-top: 60px;
+  padding-top: 150px;
 
   @media (min-width: 767px) {
-    padding-top: 30px;
+    padding-top: 200px;
   }
 
   @media (min-width: 1024px) {
     background-size: initial;
+    padding-top: 0px;
   }
 
   @media (min-width: 1024px) {

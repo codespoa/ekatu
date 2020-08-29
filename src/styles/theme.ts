@@ -11,6 +11,10 @@ const theme = {
     grey200: '#DEDFE3'
   },
 
+  margins: {
+    one: '50px'
+  },
+
   position: {
     reverse: 'row-reverse'
   }

@@ -22,9 +22,14 @@ export default createGlobalStyle`
   }
 
   /* Remove default padding */
-  ul[class],
-  ol[class] {
+  ul,
+  ol {
     padding: 0;
+  }
+
+  /* Remove list style */
+  li {
+    list-style: none;
   }
 
   /* Remove default margin */
@@ -34,8 +39,8 @@ export default createGlobalStyle`
   h3,
   h4,
   p,
-  ul[class],
-  ol[class],
+  ul,
+  ol,
   li,
   figure,
   figcaption,
@@ -55,14 +60,18 @@ export default createGlobalStyle`
   }
 
   /* Remove list styles on ul, ol elements with a class attribute */
-  ul[class],
-  ol[class] {
+  ul,
+  ol {
     list-style: none;
   }
 
   /* A elements that don't have a class get default styles */
-  a:not([class]) {
+  a:not() {
     text-decoration-skip-ink: auto;
+  }
+
+  a {
+    text-decoration: none;
   }
 
   /* Make images easier to work with */
@@ -82,6 +91,8 @@ export default createGlobalStyle`
   textarea,
   select {
     font: inherit;
+    margin:0;
+    padding: 0;
   }
 
   /* Remove all animations and transitions for people that prefer not to see them */

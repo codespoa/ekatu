@@ -11,6 +11,7 @@ type EnergiaProps = {
   textSeccond: string
   textButon: string
   imgTraco: string
+  revert: boolean
 }
 
 const Energia: React.FC = ({
@@ -19,12 +20,13 @@ const Energia: React.FC = ({
   support,
   textButton,
   imgTraco,
-  imageContent
+  imageContent,
+  revert
 }: EnergiaProps) => {
   const [textSupport, setTextSupport] = useState(support)
 
   return (
-    <ContainerEnergia>
+    <ContainerEnergia className={revert ? 'revert' : 'normal'}>
       <div className="ocean">
         <div className="wave"></div>
         <div className="wave"></div>

@@ -1,6 +1,5 @@
 import React from 'react'
 import Head from 'next/head'
-import 'styled-components'
 
 import Header from '../components/Header'
 import Reduza from '../components/Reduza'
@@ -34,7 +33,6 @@ const Home: React.FC = () => {
         textSeccond="Transformação da energia do vento em energia útil."
         support="Soluções exclusivas em energia"
         textButton="Leia mais"
-        imgTraco={null}
         imageContent={imageBosque}
         imgTraco={imageTraco}
       ></Energia>
@@ -44,6 +42,7 @@ const Home: React.FC = () => {
         textSeccond="Energia solar fotovoltaica é a energia obtida através da conversão direta da luz solar em eletricidade."
         textButton="Leia mais"
         imageContent={imageBosque}
+        revert={true}
       ></Energia>
 
       <Energia
@@ -58,6 +57,7 @@ const Home: React.FC = () => {
         textSeccond="Transformando o movimento das águas em energia renovável."
         textButton="Leia mais"
         imageContent={imageBosque}
+        revert={true}
       ></Energia>
 
       <Energia

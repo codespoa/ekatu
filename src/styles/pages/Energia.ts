@@ -3,7 +3,7 @@ import img from '../../assets/new-fundo-page.png'
 
 export const ContainerEnergia = styled.section`
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   padding: 50px 0;
   display: flex;
   justify-content: space-evenly;
@@ -13,7 +13,8 @@ export const ContainerEnergia = styled.section`
   background-position: center;
   background-size: contain;
   flex-wrap: wrap;
-  padding: 0 15px;
+  padding: 45px 15px;
+  /* background-image: url(${img}); */
 
   @media (min-width: 1024px) {
     margin: 0 auto;
@@ -31,6 +32,10 @@ export const ContainerEnergia = styled.section`
   @media (min-width: 1900px) {
     max-width: 1920px;
     margin: 0 auto;
+  }
+
+  &.revert {
+    flex-direction: row-reverse;
   }
 
   .boxText {
@@ -143,9 +148,11 @@ export const ContainerEnergia = styled.section`
     align-items: center;
     justify-content: center;
     width: 100%;
+    margin-top: 45px;
 
     @media (min-width: 1024px) {
       padding: 0 20px;
+      margin-top: 0;
     }
 
     @media (min-width: 1200px) {
