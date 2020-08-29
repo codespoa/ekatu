@@ -13,6 +13,7 @@ export const ContainerEnergia = styled.section`
   background-position: center;
   background-size: contain;
   flex-wrap: wrap;
+  padding: 0 15px;
 
   @media (min-width: 1024px) {
     margin: 0 auto;
@@ -40,6 +41,11 @@ export const ContainerEnergia = styled.section`
     .solucaoExclusiva {
       display: flex;
       align-items: center;
+      margin: 45px 0 25px;
+
+      @media (min-width: 767px) {
+        margin: 0;
+      }
 
       img {
         display: none;
@@ -51,9 +57,14 @@ export const ContainerEnergia = styled.section`
       }
 
       h5 {
-        font-size: 35px;
-        line-height: 41px;
+        font-size: 15px;
+        line-height: 21px;
         font-weight: 500;
+
+        @media (min-width: 767px) {
+          font-size: 35px;
+          line-height: 41px;
+        }
 
         /* @media (min-width: 1300px) {
           font-size: 100px;
@@ -75,9 +86,14 @@ export const ContainerEnergia = styled.section`
         font-size: 100px;
         line-height: 117px;
         font-weight: 300;
-        font-size: 100px;
-        line-height: 117px;
+        font-size: 61px;
+        line-height: 63px;
         color: ${props => props.theme.colors.primary};
+
+        @media (min-width: 767px) {
+          font-size: 100px;
+          line-height: 117px;
+        }
 
         @media (min-width: 1300px) {
           max-width: 560px;
@@ -86,6 +102,7 @@ export const ContainerEnergia = styled.section`
 
       p {
         color: ${props => props.theme.colors.text};
+        margin: 25px 0;
 
         @media (min-width: 1024px) {
           margin: 50px 0 130px;
@@ -141,8 +158,11 @@ export const ContainerEnergia = styled.section`
     bottom: 65px;
     left: 0;
     right: 0;
-    display: flex;
     justify-content: center;
+    display: none;
+    @media (min-width: 998px) {
+      display: flex;
+    }
   }
 
   /*.ocean {

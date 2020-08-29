@@ -11,6 +11,7 @@ export const ContainerReduza = styled.section`
   padding-bottom: 0;
   flex-wrap: wrap;
   overflow: hidden;
+  min-height: 50vh;
 
   @media (min-width: 1024px) {
     margin: 0 auto;
@@ -87,6 +88,12 @@ export const ContainerReduza = styled.section`
         h1 {
           color: ${props => props.theme.colors.grey};
           font-weight: 300;
+          font-size: 27px;
+
+          @media (min-width: 767px) {
+            font-size: 32px;
+            line-height: 39px;
+          }
 
           @media (min-width: 1024px) {
             font-size: 45px;
@@ -104,6 +111,11 @@ export const ContainerReduza = styled.section`
 
   .image {
     width: 100%;
+    display: none;
+
+    @media (min-width: 767px) {
+      display: block;
+    }
     @media (min-width: 998px) {
       margin-right: -10%;
     }
@@ -114,6 +126,10 @@ export const ContainerReduza = styled.section`
   }
 
   .imageDown {
+    display: none;
+    @media (min-width: 998px) {
+      display: block;
+    }
     position: absolute;
     bottom: 0px;
   }

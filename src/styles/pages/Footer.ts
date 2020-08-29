@@ -10,6 +10,16 @@ export const ContainerFooter = styled.section`
   align-items: flex-end;
   flex-direction: column;
   justify-content: flex-end;
+  background-size: contain;
+  padding-top: 60px;
+
+  @media (min-width: 767px) {
+    padding-top: 30px;
+  }
+
+  @media (min-width: 1024px) {
+    background-size: initial;
+  }
 
   @media (min-width: 1024px) {
     padding: 0 10px;
@@ -57,8 +67,13 @@ export const ContainerFooter = styled.section`
         h5 {
           color: ${props => props.theme.colors.green};
           font-weight: 500;
-          font-size: 32px;
-          line-height: 37px;
+          font-size: 22px;
+          line-height: 27px;
+
+          @media (min-width: 767px) {
+            font-size: 32px;
+            line-height: 37px;
+          }
         }
 
         .line {
@@ -72,8 +87,13 @@ export const ContainerFooter = styled.section`
       h4 {
         color: ${props => props.theme.colors.white};
         font-weight: 300;
-        font-size: 45px;
-        line-height: 53px;
+        font-size: 30px;
+        line-height: 36px;
+
+        @media (min-width: 767px) {
+          font-size: 45px;
+          line-height: 53px;
+        }
       }
     }
     .button {
@@ -95,15 +115,24 @@ export const ContainerFooter = styled.section`
         border: 2px solid ${props => props.theme.colors.green};
         box-sizing: border-box;
         border-radius: 100px;
-        padding: 24px 64px;
+        padding: 13px 44px;
         text-decoration: none;
+
+        @media (min-width: 767px) {
+          padding: 24px 64px;
+        }
 
         p {
           margin-right: 15px;
           font-weight: 500;
-          font-size: 24px;
+          font-size: 15px;
           line-height: 170%;
           color: ${props => props.theme.colors.green};
+
+          @media (min-width: 767px) {
+            font-size: 24px;
+            line-height: 170%;
+          }
         }
       }
     }
