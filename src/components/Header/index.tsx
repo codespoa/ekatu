@@ -4,22 +4,22 @@ import { HeaderStyle } from '../../styles/pages/Header'
 import LogoHeader from '../../assets/logo-ekatu.svg'
 import MenuDesktop from '../../assets/menu-desktop.svg'
 
-const Header: React.FC = () => {
+const Header: React.FC = props => {
   // interface RequestLink = {
   //   link: String;
   // }
-
+  const [activeMenu, setActiveMenu] = useState(false)
   // const [ activeLinkHome, setActiveLinkHome ] = useState(true)
   // const [ activeLinkSolucao, setActiveLinkSolucao ] = useState(false)
   // const [ activeLinkSustentabilidade, setActiveLinkSustentabilidade ] = useState(false)
 
-  function openMenuDesk() {
-    alert('teste')
-  }
+  // function openMenuDesk() {
+  //   alert('teste')
+  // }
 
-  function openMenuMobile() {
-    alert('teste')
-  }
+  // function openMenuMobile() {
+  //   alert('teste')
+  // }
 
   function activePage() {
     // if(link == 1) {
@@ -60,12 +60,16 @@ const Header: React.FC = () => {
           <li>Login</li>
         </a>
 
-        <a className="menu-desk" onClick={openMenuDesk}>
+        <a className="menu-desk" onClick={() => setActiveMenu(!activeMenu)}>
           <MenuDesktop />
+
+          {open && props.children}
         </a>
       </ul>
-      <a className="menu-mobile" onClick={openMenuMobile}>
+      <a className="menu-mobile" onClick={() => setActiveMenu(!activeMenu)}>
         <MenuDesktop />
+
+        {open && props.children}
       </a>
     </HeaderStyle>
   )

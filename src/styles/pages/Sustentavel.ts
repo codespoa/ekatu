@@ -1,5 +1,7 @@
 // import 'bootstrap/dist/css/bootstrap.min.css'
 import styled from 'styled-components'
+import arrowLeft from '../../assets/arrow.alt.left.png'
+import arrowRight from '../../assets/arrow.alt.right.png'
 
 export const ContainerSustentavel = styled.section`
   width: 100%;
@@ -57,6 +59,14 @@ export const ContainerSustentavel = styled.section`
         align-items: center; */
       }
     }
+  }
+
+  .carousel-control-prev-icon {
+    background-image: url(${arrowLeft});
+  }
+
+  .carousel-control-next-icon {
+    background-image: url(${arrowRight});
   }
 
   .carrouselCaption {

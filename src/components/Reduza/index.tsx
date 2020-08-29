@@ -4,6 +4,8 @@ import { ContainerReduza } from '../../styles/pages/Reduza'
 import ImagePaisagem from '../../assets/imagePaisagem.svg'
 import MouseDown from '../../assets/mouse-down.svg'
 
+import imgPaisagem from '../../assets/image-paisagem.png'
+
 const Reduza: React.FC = () => {
   return (
     <ContainerReduza>
@@ -53,7 +55,7 @@ const Reduza: React.FC = () => {
         </div>
       </div>
       <div className="image">
-        <ImagePaisagem />
+        <img src={imgPaisagem} alt="Ekatu" />
       </div>
       <a href="#" className="imageDown">
         <MouseDown />

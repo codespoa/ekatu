@@ -8,6 +8,7 @@ import QuemSomos from '../components/QuemSomos'
 import Sustentavel from '../components/Sustentavel'
 import Footer from '../components/Footer'
 import BottomFooter from '../components/BottomFooter'
+import MenuMobile from '../components/MenuMobile'
 
 import { ContainerHeader } from '../styles/pages/Home'
 
@@ -25,6 +26,8 @@ const Home: React.FC = () => {
       <ContainerHeader>
         <Header />
       </ContainerHeader>
+
+      <MenuMobile />
 
       <Reduza />
 

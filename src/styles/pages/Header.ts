@@ -66,6 +66,10 @@ export const HeaderStyle = styled.section`
       }
       li {
         list-style: none;
+
+        &:hover {
+          color: ${props => props.theme.colors.purple};
+        }
       }
 
       .circle {

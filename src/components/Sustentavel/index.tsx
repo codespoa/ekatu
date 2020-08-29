@@ -23,7 +23,7 @@ const Sustentavel: React.FC = () => {
         <Carousel.Item interval={1000}>
           <img className="d-block m-auto" src={img} alt="First slide" />
           <Carousel.Caption className="carrouselCaption">
-            <h3>Rudsadsai Duarte</h3>
+            <h3>Rudi Duarte</h3>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo,
               mollis neque in quam. Sit elementum vulputate bibendum lobortis
@@ -36,7 +36,7 @@ const Sustentavel: React.FC = () => {
         <Carousel.Item interval={500}>
           <img className="d-block m-auto" src={img} alt="Third slide" />
           <Carousel.Caption className="carrouselCaption">
-            <h3>Rudi Duarte</h3>
+            <h3>Neomar</h3>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo,
               mollis neque in quam. Sit elementum vulputate bibendum lobortis
@@ -49,7 +49,7 @@ const Sustentavel: React.FC = () => {
         <Carousel.Item>
           <img className="d-block  m-auto" src={img} alt="Third slide" />
           <Carousel.Caption className="carrouselCaption">
-            <h3>Rudi Duarte</h3>
+            <h3>Cadu Alves</h3>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo,
               mollis neque in quam. Sit elementum vulputate bibendum lobortis

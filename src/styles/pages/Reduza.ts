@@ -98,6 +98,7 @@ export const ContainerReduza = styled.section`
           @media (min-width: 1024px) {
             font-size: 45px;
             line-height: 53px;
+            max-width: 598px;
           }
 
           @media (min-width: 1600px) {
@@ -115,13 +116,14 @@ export const ContainerReduza = styled.section`
 
     @media (min-width: 767px) {
       display: block;
+      margin-right: -10%;
     }
     @media (min-width: 998px) {
-      margin-right: -10%;
+      /* margin-right: -10%; */
     }
 
     @media (min-width: 1200px) {
-      width: 50%;
+      /* width: 50%; */
     }
   }
 
