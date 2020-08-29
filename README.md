@@ -20,7 +20,7 @@ Construir uma página para Ekatu - Soluções Exclusivas em Energia:
 - Typescript
 - Next JS
 - Babel
-- sass/scss
+- Styled Component
 - Webpack
 
 ## :gear: Instalando o projeto
@@ -36,7 +36,7 @@ yarn install / npm install
 ## :computer: Executando o projeto
 
 ```bash
-yarn next dev / npm run next dev
+yarn dev / npm run dev
 ```
 
 Após iniciar o projeto, o servidor estará disponivel em [localhost:3000](http://localhost:3000/)
