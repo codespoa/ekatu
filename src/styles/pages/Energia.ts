@@ -12,26 +12,42 @@ export const ContainerEnergia = styled.section`
   background-image: none;
   background-position: center;
   background-size: contain;
+  flex-wrap: wrap;
 
   @media (min-width: 1024px) {
     margin: 0 auto;
     align-items: top;
-    padding: 50px 0px;
+    padding: 50px;
     max-width: 1500px;
   }
 
   @media (min-width: 1600px) {
     max-width: 1500px;
     margin: 0 auto;
+    padding: 0;
+  }
+
+  @media (min-width: 1900px) {
+    max-width: 1920px;
+    margin: 0 auto;
   }
 
   .boxText {
+    width: 100%;
+    @media (min-width: 1200px) {
+      width: 50%;
+    }
     .solucaoExclusiva {
       display: flex;
       align-items: center;
 
-      svg {
+      img {
+        display: none;
         margin-right: 20px;
+
+        &.active {
+          display: block !important;
+        }
       }
 
       h5 {
@@ -103,6 +119,11 @@ export const ContainerEnergia = styled.section`
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100%;
+
+    @media (min-width: 1200px) {
+      width: 50%;
+    }
   }
 
   .imageDown {
@@ -118,7 +139,21 @@ export const ContainerEnergia = styled.section`
 export const RevertContainerEnergia = styled(ContainerEnergia)`
   /* background: red; */
   background-image: url(${img});
+
+  .image {
+    order: 2;
+
+    @media (min-width: 1200px) {
+      order: 1;
+    }
+  }
   .boxText {
     order: 2;
+  }
+`
+
+export const ContainerQuemSomos = styled(ContainerEnergia)`
+  .text {
+    margin: 0;
   }
 `

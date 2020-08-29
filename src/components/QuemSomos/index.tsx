@@ -1,11 +1,10 @@
 import React, { useState } from 'react'
 
-import { ContainerEnergia } from '../../styles/pages/Energia'
+import { ContainerQuemSomos } from '../../styles/pages/QuemSomos'
 
-import ImageArrow from '../../assets/arrow-button.svg'
-import MouseDown from '../../assets/mouse-down.svg'
+import ImageArrow from '../../assets/arrow-button-grey.svg'
 
-type EnergiaProps = {
+type EQuemSomosProps = {
   support: string
   textMain: string
   textSeccond: string
@@ -13,18 +12,15 @@ type EnergiaProps = {
   imgTraco: string
 }
 
-const Energia: React.FC = ({
-  textMain,
+const QuemSomos: React.FC = ({
   textSeccond,
   support,
   textButton,
   imgTraco,
-  imageContent,
-}: EnergiaProps) => {
-  const [textSupport, setTextSupport] = useState(support)
-
+  imageContent
+}: QuemSomosProps) => {
   return (
-    <ContainerEnergia>
+    <ContainerQuemSomos>
       <div className="boxText">
         <div className="solucaoExclusiva">
           <img
@@ -32,11 +28,10 @@ const Energia: React.FC = ({
             className={imgTraco ? 'active' : 'inactive'}
             alt="Ekatu"
           />
-          <h5>{textSupport}</h5>
+          <h5>{support}</h5>
         </div>
 
         <div className="text">
-          <h2>{textMain}</h2>
           <p>{textSeccond}</p>
           <a href="#">
             <p>{textButton}</p>
@@ -48,11 +43,8 @@ const Energia: React.FC = ({
       <div className="image">
         <img src={imageContent} alt="Ekatu" />
       </div>
-      <a href="#" className="imageDown">
-        <MouseDown />
-      </a>
-    </ContainerEnergia>
+    </ContainerQuemSomos>
   )
 }
 
-export default Energia
+export default QuemSomos

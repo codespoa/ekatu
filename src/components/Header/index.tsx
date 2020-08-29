@@ -17,6 +17,10 @@ const Header: React.FC = () => {
     alert('teste')
   }
 
+  function openMenuMobile() {
+    alert('teste')
+  }
+
   function activePage() {
     // if(link == 1) {
     //   setActiveLinkSolucao(false)
@@ -60,6 +64,9 @@ const Header: React.FC = () => {
           <MenuDesktop />
         </a>
       </ul>
+      <a className="menu-mobile" onClick={openMenuMobile}>
+        <MenuDesktop />
+      </a>
     </HeaderStyle>
   )
 }

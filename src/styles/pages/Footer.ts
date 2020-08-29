@@ -21,6 +21,12 @@ export const ContainerFooter = styled.section`
   }
 
   @media (min-width: 1600px) {
+    padding: 0;
+    max-width: 1500px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: 1900px) {
     padding: 0 50px;
     max-width: 1920px;
     margin: 0 auto;
@@ -33,6 +39,18 @@ export const ContainerFooter = styled.section`
     width: 100%;
     display: flex;
     justify-content: space-evenly;
+    margin-bottom: 30px;
+    flex-direction: column;
+    align-items: center;
+
+    @media (min-width: 767px) {
+      margin-bottom: 100px;
+    }
+
+    @media (min-width: 1024px) {
+      flex-direction: row;
+      align-items: initial;
+    }
 
     .text {
       .ekatu {
@@ -60,6 +78,15 @@ export const ContainerFooter = styled.section`
     }
     .button {
       display: flex;
+      margin-top: 20px;
+
+      @media (min-width: 767px) {
+        margin-top: 50px;
+      }
+
+      @media (min-width: 1024px) {
+        margin-top: 0;
+      }
 
       a {
         display: flex;
@@ -87,24 +114,37 @@ export const ContainerFooter = styled.section`
     display: flex;
     align-items: flex-start;
     justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
 
     @media (min-width: 1024px) {
+      flex-direction: row;
       margin-bottom: 80px;
+      align-items: initial;
     }
 
     @media (min-width: 1300px) {
-      margin: 150px 0 160px;
+      margin: 50px 0 160px;
     }
 
     .institucional,
     .solucoes {
+      text-align: center;
+      margin: 10px 0 0;
+      @media (min-width: 1024px) {
+        text-align: initial;
+      }
       ul {
         h6 {
           font-weight: bold;
           font-size: 24px;
           line-height: 28px;
           color: ${props => props.theme.colors.white};
-          margin-bottom: 60px;
+          margin-bottom: 10px;
+
+          @media (min-width: 1024px) {
+            margin-bottom: 60px;
+          }
         }
 
         a {
@@ -120,7 +160,11 @@ export const ContainerFooter = styled.section`
 
           li {
             list-style: none;
-            margin-bottom: 28px;
+            margin-bottom: 10px;
+
+            @media (min-width: 1024px) {
+              margin-bottom: 28px;
+            }
 
             &.last {
               margin: 0;
@@ -133,6 +177,14 @@ export const ContainerFooter = styled.section`
     .social {
       display: flex;
       flex-direction: column;
+      text-align: center;
+      align-items: center;
+      margin: 20px 0 75px;
+      @media (min-width: 1024px) {
+        text-align: initial;
+        align-items: initial;
+        margin: 0;
+      }
 
       h6 {
         font-weight: bold;
@@ -145,7 +197,11 @@ export const ContainerFooter = styled.section`
       .socialIconm {
         display: flex;
         align-items: center;
-        margin-bottom: 60px;
+        margin-bottom: 20px;
+
+        @media (min-width: 1024px) {
+          margin-bottom: 60px;
+        }
 
         .icon {
           display: flex;

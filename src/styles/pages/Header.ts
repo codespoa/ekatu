@@ -3,12 +3,27 @@ import styled from 'styled-components'
 export const HeaderStyle = styled.section`
   display: flex;
   align-items: center;
+  padding: 0 20px;
+
+  @media (min-width: 1300px) {
+    padding: 0 30px;
+  }
 
   div {
     margin-right: 50px;
 
     @media (min-width: 1300px) {
-      margin-right: 200px;
+      margin-right: 50px;
+    }
+
+    @media (min-width: 1600px) {
+      margin-right: 100px;
+      padding: 0;
+    }
+
+    @media (min-width: 1900px) {
+      max-width: 1920px;
+      margin: 0 auto;
     }
   }
 
@@ -18,12 +33,16 @@ export const HeaderStyle = styled.section`
   }
 
   ul {
-    display: flex;
+    display: none;
+
+    @media (min-width: 1200px) {
+      display: flex;
+    }
 
     a {
       text-decoration: none;
       color: ${props => props.theme.colors.primary};
-      font-size: 19px;
+      font-size: 16px;
       font-weight: bold;
       min-width: 60px;
       display: flex;
@@ -34,8 +53,16 @@ export const HeaderStyle = styled.section`
       margin-right: 50px;
       cursor: pointer;
 
-      @media (min-with: 1300px) {
+      @media (min-width: 1300px) {
         margin-right: 70px;
+      }
+
+      @media (min-width: 1600px) {
+        font-size: 16px;
+      }
+
+      @media (min-width: 1900px) {
+        font-size: 19px;
       }
       li {
         list-style: none;
@@ -61,6 +88,12 @@ export const HeaderStyle = styled.section`
       &:hover {
         color: ${props => props.theme.colors.purple};
       }
+    }
+  }
+
+  .menu-mobile {
+    @media (min-width: 1200px) {
+      display: none;
     }
   }
 
