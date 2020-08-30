@@ -8,9 +8,8 @@ import QuemSomos from '../components/QuemSomos'
 import Sustentavel from '../components/Sustentavel'
 import Footer from '../components/Footer'
 import BottomFooter from '../components/BottomFooter'
-import MenuMobile from '../components/MenuMobile'
 
-import { ContainerHeader } from '../styles/pages/Home'
+import { ContainerMain } from '../styles/pages/Home'
 
 import imageBosque from '../assets/bosque.png'
 import imageElice from '../assets/elice.png'
@@ -18,16 +17,12 @@ import imageTraco from '../assets/traco.png'
 
 const Home: React.FC = () => {
   return (
-    <>
+    <ContainerMain>
       <Head>
         <title>Ekatu - Soluções exclusivas em energia</title>
       </Head>
 
-      <ContainerHeader>
-        <Header />
-      </ContainerHeader>
-
-      <MenuMobile />
+      <Header />
 
       <Reduza />
 
@@ -83,7 +78,7 @@ const Home: React.FC = () => {
       <Footer />
 
       <BottomFooter />
-    </>
+    </ContainerMain>
   )
 }
 

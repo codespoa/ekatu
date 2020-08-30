@@ -1,17 +1,39 @@
 // import 'bootstrap/dist/css/bootstrap.min.css'
 import styled from 'styled-components'
-import arrowLeft from '../../assets/arrow.alt.left.png'
-import arrowRight from '../../assets/arrow.alt.right.png'
 
 export const ContainerMenuMobile = styled.div`
   background-color: ${({ theme }) => theme.colors.purple};
   width: 100%;
   min-height: 100vh;
+  position: initial;
+  z-index: 10;
+  transition: all 0.5s ease;
+  display: flex;
+  justify-content: center;
   position: fixed;
-  top: 17%;
-  right: 0;
-  z-index: 5;
-  transition: all 0.5 ease;
+  top: 0;
+  left: 0;
+  overflow-y: auto;
+  padding: 15% 0;
+
+  .image {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    .closeMenu {
+      width: 30px;
+      height: 30px;
+
+      @media (min-width: 500px) {
+        display: block;
+      }
+
+      @media (min-width: 986px) {
+        display: none;
+      }
+    }
+  }
 
   @media (min-width: 1200px) {
     display: none;

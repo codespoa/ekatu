@@ -3,8 +3,11 @@ import React, { useState } from 'react'
 import { HeaderStyle } from '../../styles/pages/Header'
 import LogoHeader from '../../assets/logo-ekatu.svg'
 import MenuDesktop from '../../assets/menu-desktop.svg'
+import { ContainerHeader } from '../../styles/pages/Home'
+import styled from 'styled-components'
+import MenuMobile from './../MenuMobile/'
 
-const Header: React.FC = props => {
+const Header: React.FC = () => {
   // interface RequestLink = {
   //   link: String;
   // }
@@ -36,42 +39,51 @@ const Header: React.FC = props => {
     // }
   }
 
+  const MenuMobileContainer = styled.div`
+    &.OpenMenuMobile {
+      visibility: ${activeMenu ? 'hidden' : 'visible'};
+    }
+  `
+
   return (
-    <HeaderStyle>
-      <div>
-        <LogoHeader />
-      </div>
-      <ul>
-        <a onClick={activePage}>
-          <li>Home</li>
-          <div className="circle"></div>
-          {/* <div className={activeLinkHome && 'active'}></div> */}
-        </a>
-        <a onClick={activePage}>
-          <li>Soluções Energéticas Sustentáveis</li>
-          <div className="circle"></div>
-        </a>
-        <a onClick={activePage}>
-          <li>Sustentabilidade Empresarial</li>
-          <div className="circle"></div>
-        </a>
+    <>
+      <ContainerHeader>
+        <HeaderStyle>
+          <div>
+            <LogoHeader />
+          </div>
+          <ul>
+            <a onClick={activePage}>
+              <li>Home</li>
+              <div className="circle"></div>
+              {/* <div className={activeLinkHome && 'active'}></div> */}
+            </a>
+            <a onClick={activePage}>
+              <li>Soluções Energéticas Sustentáveis</li>
+              <div className="circle"></div>
+            </a>
+            <a onClick={activePage}>
+              <li>Sustentabilidade Empresarial</li>
+              <div className="circle"></div>
+            </a>
 
-        <a className="login" href="#">
-          <li>Login</li>
-        </a>
+            <a className="login" href="#">
+              <li>Login</li>
+            </a>
 
-        <a className="menu-desk" onClick={() => setActiveMenu(!activeMenu)}>
-          <MenuDesktop />
-
-          {open && props.children}
-        </a>
-      </ul>
-      <a className="menu-mobile" onClick={() => setActiveMenu(!activeMenu)}>
-        <MenuDesktop />
-
-        {open && props.children}
-      </a>
-    </HeaderStyle>
+            <a className="menu-desk" onClick={() => setActiveMenu(!activeMenu)}>
+              <MenuDesktop />
+            </a>
+          </ul>
+          <a className="menu-mobile" onClick={() => setActiveMenu(!activeMenu)}>
+            <MenuDesktop />
+          </a>
+        </HeaderStyle>
+      </ContainerHeader>
+      <MenuMobileContainer className="OpenMenuMobile">
+        <MenuMobile />
+      </MenuMobileContainer>
+    </>
   )
 }
 

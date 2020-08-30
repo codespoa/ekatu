@@ -3,10 +3,12 @@ import styled from 'styled-components'
 export const HeaderStyle = styled.section`
   display: flex;
   align-items: center;
-  padding: 0 20px;
+  position: initial;
+  transition: all 0.5s ease;
 
   @media (min-width: 1300px) {
     padding: 0 30px;
+    position: initial;
   }
 
   div {
