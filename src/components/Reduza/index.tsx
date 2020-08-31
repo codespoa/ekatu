@@ -1,17 +1,19 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 import { ContainerReduza } from '../../styles/pages/Reduza'
 import MouseDown from '../../assets/mouse-down.svg'
 import imgPaisagem from '../../assets/image-paisagem.png'
 
 const Reduza: React.FC = () => {
+  const [showContent, setShowContent] = useState(false)
+
   return (
     <ContainerReduza>
       <div className="containerCustom">
         <div className="boxSelect">
           <div className="select">
             <ul>
-              <a href="#">
+              <a>
                 <li>
                   <p className="green"></p>
                   <div className="box-dialog"></div>

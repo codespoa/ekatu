@@ -2,7 +2,7 @@
 import styled from 'styled-components'
 
 export const ContainerMenuMobile = styled.div`
-  background-color: ${({ theme }) => theme.colors.purple};
+  /* background-color: ${({ theme }) => theme.colors.purple};
   width: 100%;
   min-height: 100vh;
   position: initial;
@@ -62,5 +62,5 @@ export const ContainerMenuMobile = styled.div`
         padding: 10px 0;
       }
     }
-  }
+  } */
 `
