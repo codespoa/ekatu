@@ -21,7 +21,7 @@ export const ContainerMenuMobile = styled.div`
     align-items: center;
     justify-content: space-evenly;
 
-    .closeMenu {
+    .closeMenuIcon {
       width: 30px;
       height: 30px;
 

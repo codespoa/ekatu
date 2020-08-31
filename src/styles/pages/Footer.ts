@@ -38,13 +38,24 @@ export const ContainerFooter = styled.section`
     margin: 0 auto;
   }
 
-  @media (min-width: 1900px) {
-    padding: 0 50px;
+  @media (min-width: 1920px) {
     max-width: 1920px;
     margin: 0 auto;
+    padding: 0 40px;
   }
 
-  @media (min-width: 1800px) {
+  .containerCustom {
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: 998px) {
+      flex-direction: row;
+    }
+
+    @media (min-width: 1920px) {
+      max-width: 1520px;
+      margin: 0 auto;
+    }
   }
 
   .energiaPreserva {
@@ -265,6 +276,10 @@ export const ContainerBottomFooter = styled.section`
   align-items: center;
   text-align: center;
   background-color: ${props => props.theme.colors.purple200};
+
+  .containerCumstom {
+    display: flex;
+  }
   padding: 60px 0;
 
   .bottomFooter {

@@ -11,6 +11,20 @@ export const HeaderStyle = styled.section`
     position: initial;
   }
 
+  .containerCustom {
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: 998px) {
+      flex-direction: row;
+    }
+
+    @media (min-width: 1920px) {
+      max-width: 1520px;
+      margin: 0 auto;
+    }
+  }
+
   div {
     margin-right: 50px;
 
@@ -23,9 +37,10 @@ export const HeaderStyle = styled.section`
       padding: 0;
     }
 
-    @media (min-width: 1900px) {
+    @media (min-width: 1920px) {
       max-width: 1920px;
       margin: 0 auto;
+      padding: 0 40px;
     }
   }
 
@@ -52,18 +67,19 @@ export const HeaderStyle = styled.section`
       justify-content: center;
       align-items: center;
       position: relative;
-      margin-right: 50px;
       cursor: pointer;
+      margin-right: 20px;
 
       @media (min-width: 1300px) {
-        margin-right: 70px;
+        margin-right: 45px;
       }
 
       @media (min-width: 1600px) {
         font-size: 16px;
+        margin-right: 70px;
       }
 
-      @media (min-width: 1900px) {
+      @media (min-width: 1920px) {
         font-size: 19px;
       }
       li {

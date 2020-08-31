@@ -1,5 +1,6 @@
 import styled from 'styled-components'
-import img from '../../assets/new-fundo-page.png'
+import imgGrey from '../../assets/fundo-page-white.png'
+import imgWhite from '../../assets/fundo-page-grey.png'
 
 export const ContainerEnergia = styled.section`
   width: 100%;
@@ -14,7 +15,6 @@ export const ContainerEnergia = styled.section`
   background-size: contain;
   flex-wrap: wrap;
   padding: 45px 15px;
-  /* background-image: url(${img}); */
 
   @media (min-width: 1024px) {
     margin: 0 auto;
@@ -29,13 +29,43 @@ export const ContainerEnergia = styled.section`
     padding: 0;
   }
 
-  @media (min-width: 1900px) {
+  @media (min-width: 1920px) {
     max-width: 1920px;
     margin: 0 auto;
+    padding: 0 40px;
+  }
+
+  .containerCustom {
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: 998px) {
+      flex-direction: row;
+    }
+
+    @media (min-width: 1920px) {
+      max-width: 1520px;
+      margin: 0 auto;
+    }
   }
 
   &.revert {
     flex-direction: row-reverse;
+    background-color: #fff;
+
+    @media (min-width: 1200px) {
+      background-color: transparent;
+      background-image: url(${imgGrey});
+    }
+  }
+
+  &.normal {
+    background-color: #f5f7fb;
+
+    @media (min-width: 1200px) {
+      background-color: transparent;
+      background-image: url(${imgWhite});
+    }
   }
 
   .boxText {
@@ -217,9 +247,6 @@ export const ContainerEnergia = styled.section`
 `
 
 export const RevertContainerEnergia = styled(ContainerEnergia)`
-  /* background: red; */
-  background-image: url(${img});
-
   .image {
     order: 2;
 
@@ -233,7 +260,22 @@ export const RevertContainerEnergia = styled(ContainerEnergia)`
 `
 
 export const ContainerQuemSomos = styled(ContainerEnergia)`
+  @media (min-width: 1920px) {
+    max-width: 1520px;
+    margin: 0 auto;
+    padding: 0 40px;
+  }
   .text {
     margin: 0;
+  }
+
+  .image {
+    img {
+      width: 80%;
+
+      @media (min-width: 998px) {
+        width: 100%;
+      }
+    }
   }
 `

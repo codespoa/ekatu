@@ -6,6 +6,39 @@ import { ContainerEnergia } from './Energia'
 export const ContainerQuemSomos = styled(ContainerEnergia)`
   background-image: url(${img});
   background-size: cover;
+
+  @media (min-width: 1024px) {
+    margin: 0 auto;
+    align-items: top;
+    padding: 50px 20px;
+    max-width: 1500px;
+  }
+
+  @media (min-width: 1600px) {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  @media (min-width: 1920px) {
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 0 40px;
+  }
+
+  .containerCustom {
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: 998px) {
+      flex-direction: row;
+    }
+
+    @media (min-width: 1920px) {
+      max-width: 1520px;
+      margin: 0 auto;
+    }
+  }
   .boxText {
     @media (min-width: 1024px) {
       justify-content: center;

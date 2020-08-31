@@ -29,9 +29,24 @@ export const ContainerHeader = styled.section`
     margin: 0 auto;
   }
 
-  @media (min-width: 1900px) {
+  @media (min-width: 1920px) {
     max-width: 1920px;
     margin: 0 auto;
+    padding: 25px 40px;
+  }
+
+  .containerCustom {
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: 998px) {
+      flex-direction: row;
+    }
+
+    @media (min-width: 1920px) {
+      max-width: 1520px;
+      margin: 0 auto;
+    }
   }
 `
 

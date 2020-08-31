@@ -9,8 +9,7 @@ const MenuMobile: React.FC = () => {
   const [closeMenuMobile, setCloseMenuMobile] = useState(false)
   const MenuMobileContainer = styled.div`
     .closeMenu {
-      visibility: ${closeMenuMobile ? 'hidden' : 'visible'};
-      visibility: hidden;
+      display: ${!closeMenuMobile ? 'flex' : 'none'};
     }
   `
   return (
@@ -20,7 +19,7 @@ const MenuMobile: React.FC = () => {
           <div className="image">
             <LogoMenuMobile />
             <NewClose
-              className="closeMenu"
+              className="closeMenuIcon"
               onClick={() => setCloseMenuMobile(!closeMenuMobile)}
             />
           </div>

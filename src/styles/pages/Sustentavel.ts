@@ -11,6 +11,20 @@ export const ContainerSustentavel = styled.section`
   align-items: center;
   flex-direction: column;
 
+  .containerCustom {
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: 998px) {
+      flex-direction: row;
+    }
+
+    @media (min-width: 1920px) {
+      max-width: 1520px;
+      margin: 0 auto;
+    }
+  }
+
   .boxText {
     width: 100%;
     margin-bottom: 20px;

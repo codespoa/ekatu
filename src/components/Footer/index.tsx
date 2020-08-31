@@ -10,7 +10,7 @@ type FooterProps = {
   support: string
   textMain: string
   textSeccond: string
-  textButon: string
+  textButton: string
 }
 
 const Footer: React.FC = ({

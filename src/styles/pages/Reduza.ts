@@ -28,9 +28,25 @@ export const ContainerReduza = styled.section`
     padding: 0;
   }
 
-  @media (min-width: 1900px) {
+  @media (min-width: 1920px) {
     max-width: 1920px;
     margin: 0 auto;
+    padding: 0 40px;
+  }
+
+  .containerCustom {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    @media (min-width: 998px) {
+      flex-direction: row;
+    }
+
+    @media (min-width: 1920px) {
+      max-width: 1520px;
+      margin: 0 auto;
+    }
   }
 
   .boxSelect {
@@ -51,6 +67,8 @@ export const ContainerReduza = styled.section`
         flex-direction: row;
         margin: 30px;
         display: flex;
+        justify-content: center;
+        align-items: center;
 
         @media (min-width: 1024px) {
           flex-direction: column;
@@ -76,10 +94,12 @@ export const ContainerReduza = styled.section`
             background-color: ${props => props.theme.colors.grey200};
             border-radius: 50%;
             margin-bottom: 20px;
+          }
 
-            &:nth-of-type(1) {
-              /* background: ${props => props.theme.colors.green}; */
-            }
+          .green {
+            background: ${props => props.theme.colors.green};
+            width: 16px;
+            height: 16px;
           }
         }
       }
@@ -91,14 +111,18 @@ export const ContainerReduza = styled.section`
           font-size: 27px;
 
           @media (min-width: 767px) {
-            font-size: 32px;
-            line-height: 39px;
+            font-size: 29px;
+            line-height: 34px;
           }
 
           @media (min-width: 1024px) {
-            font-size: 45px;
-            line-height: 53px;
+            font-size: 39px;
+            line-height: 44px;
             max-width: 598px;
+          }
+
+          @media (min-width: 1400px) {
+            font-size: 40px;
           }
 
           @media (min-width: 1600px) {
@@ -116,14 +140,20 @@ export const ContainerReduza = styled.section`
 
     @media (min-width: 767px) {
       display: block;
-      margin-right: -10%;
-    }
-    @media (min-width: 998px) {
-      /* margin-right: -10%; */
+      transform: translateX(10%);
     }
 
-    @media (min-width: 1200px) {
-      /* width: 50%; */
+    @media (min-width: 1300px) {
+      display: block;
+      transform: translateX(6%);
+    }
+
+    @media (min-width: 1900px) {
+      transform: translateX(0%);
+    }
+
+    @media (min-width: 1900px) {
+      transform: translateX(32%);
     }
   }
 

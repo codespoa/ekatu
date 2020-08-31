@@ -9,9 +9,10 @@ type EnergiaProps = {
   support: string
   textMain: string
   textSeccond: string
-  textButon: string
+  textButton: string
   imgTraco: string
   revert: boolean
+  imageContent: string
 }
 
 const Energia: React.FC = ({
@@ -27,37 +28,39 @@ const Energia: React.FC = ({
 
   return (
     <ContainerEnergia className={revert ? 'revert' : 'normal'}>
-      <div className="ocean">
-        <div className="wave"></div>
-        <div className="wave"></div>
-      </div>
-
-      <div className="boxText">
-        <div className="solucaoExclusiva">
-          <img
-            src={imgTraco}
-            className={imgTraco ? 'active' : 'inactive'}
-            alt="Ekatu"
-          />
-          <h5>{textSupport}</h5>
+      <div className="containerCustom">
+        <div className="ocean">
+          <div className="wave"></div>
+          <div className="wave"></div>
         </div>
 
-        <div className="text">
-          <h2>{textMain}</h2>
-          <p>{textSeccond}</p>
-          <a href="#">
-            <p>{textButton}</p>
-            <ImageArrow />
-          </a>
-        </div>
-      </div>
+        <div className="boxText">
+          <div className="solucaoExclusiva">
+            <img
+              src={imgTraco}
+              className={imgTraco ? 'active' : 'inactive'}
+              alt="Ekatu"
+            />
+            <h5>{textSupport}</h5>
+          </div>
 
-      <div className="image">
-        <img src={imageContent} alt="Ekatu" />
+          <div className="text">
+            <h2>{textMain}</h2>
+            <p>{textSeccond}</p>
+            <a href="#">
+              <p>{textButton}</p>
+              <ImageArrow />
+            </a>
+          </div>
+        </div>
+
+        <div className="image">
+          <img src={imageContent} alt="Ekatu" />
+        </div>
+        <a href="#" className="imageDown">
+          <MouseDown />
+        </a>
       </div>
-      <a href="#" className="imageDown">
-        <MouseDown />
-      </a>
     </ContainerEnergia>
   )
 }
