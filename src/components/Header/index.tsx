@@ -7,9 +7,13 @@ import { ContainerHeader } from '../../styles/pages/Home'
 import styled from 'styled-components'
 import MenuMobile from './../MenuMobile/'
 
-const Header: React.FC = () => {
+type DTO = {
+  children: JSX.Element
+}
+
+const Header: React.FC<DTO> = () => {
   const [activeMenu, setActiveMenu] = useState(false)
-  const [open, setOpen] = useState(false)
+  // const [open, setOpen] = useState(false)
   // const [ activeLinkHome, setActiveLinkHome ] = useState(true)
   // const [ activeLinkSolucao, setActiveLinkSolucao ] = useState(false)
   // const [ activeLinkSustentabilidade, setActiveLinkSustentabilidade ] = useState(false)
@@ -70,15 +74,11 @@ const Header: React.FC = () => {
               <li>Login</li>
             </a>
 
-            <a className="menu-desk" onClick={() => setActiveMenu(!activeMenu)}>
+            <a className="menu-desk">
               <MenuDesktop />
             </a>
           </ul>
-          <a
-            className="menu-mobile"
-            activeMenu={activeMenu}
-            onClick={() => setActiveMenu(!activeMenu)}
-          >
+          <a className="menu-mobile" onClick={() => setActiveMenu(!activeMenu)}>
             <MenuDesktop />
           </a>
         </HeaderStyle>

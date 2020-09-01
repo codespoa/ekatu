@@ -6,13 +6,13 @@ const StyledBurger = styled.div``
 type DTO = {
   openBurger: boolean
   setOpenBurger: boolean
+  children: JSX.Element
 }
 
-const Burger: React.FC = () => {
-  const [openBurger, setOpenBurger]: DTO = useState(false)
+const Burger: React.FC<DTO> = () => {
   return (
     <StyledBurger>
-      <ul openBurger={openBurger}>
+      <ul>
         <a href="#">
           <li>lala</li>
         </a>

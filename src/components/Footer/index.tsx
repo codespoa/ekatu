@@ -6,19 +6,11 @@ import ImgLinkedin from '../../assets/linkedin.svg'
 import ImgAneel from '../../assets/aneel.svg'
 import ImgArrow from '../../assets/arrow-button-grey.svg'
 
-type FooterProps = {
-  support: string
-  textMain: string
-  textSeccond: string
-  textButton: string
+type DTO = {
+  children: JSX.Element
 }
 
-const Footer: React.FC = ({
-  textMain,
-  textSeccond,
-  support,
-  textButton
-}: FooterProps) => {
+const Footer: React.FC<DTO> = () => {
   return (
     <>
       <ContainerFooter>

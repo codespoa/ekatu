@@ -1,24 +1,15 @@
-import React, { useState } from 'react'
-import styled from 'styled-components'
-
+import React from 'react'
 import { ContainerMenuMobile } from '../../styles/pages/MenuMobile'
-import LogoMenuMobile from '../../assets/logo-ekatu.svg'
-import NewClose from '../../assets/new-close.svg'
 
 type DTO = {
-  activeMenu: boolean
+  activemenu: boolean
+  children: JSX.Element
 }
 
-const MenuMobile: React.FC = ({ activeMenu }: DTO) => {
+const MenuMobile: React.FC<DTO> = ({ activemenu }: DTO) => {
   return (
-    <ContainerMenuMobile className={activeMenu ? '' : 'header__nav'}>
+    <ContainerMenuMobile className={activemenu ? '' : 'header__nav'}>
       <nav>
-         <div className="image">
-          <LogoMenuMobile />
-          <NewClose
-            className={activeMenu ? 'closeMenuIcon active' : 'closeMenuIcon'}
-          />
-        </div> }
         <ul>
           <a href="#">
             <li>Home</li>

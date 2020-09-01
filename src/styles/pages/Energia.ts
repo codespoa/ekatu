@@ -47,6 +47,16 @@ export const ContainerEnergia = styled.section`
       max-width: 1520px;
       margin: 0 auto;
     }
+
+    &.revert {
+      flex-direction: row-reverse !important;
+      background-color: #fff;
+
+      @media (min-width: 1200px) {
+        background-color: transparent;
+        background-image: url(${imgGrey});
+      }
+    }
   }
 
   &.revert {

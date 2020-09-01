@@ -11,9 +11,10 @@ type QuemSomosProps = {
   textButton: string
   imgTraco: string
   imageContent: string
+  children: JSX.Element
 }
 
-const QuemSomos: React.FC = ({
+const QuemSomos: React.FC<QuemSomosProps> = ({
   textSeccond,
   support,
   textButton,

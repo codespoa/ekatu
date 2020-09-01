@@ -4,7 +4,11 @@ import { ContainerReduza } from '../../styles/pages/Reduza'
 import MouseDown from '../../assets/mouse-down.svg'
 import imgPaisagem from '../../assets/image-paisagem.png'
 
-const Reduza: React.FC = () => {
+type DTO = {
+  children: JSX.Element
+}
+
+const Reduza: React.FC<DTO> = () => {
   const [showContent, setShowContent] = useState(false)
 
   return (

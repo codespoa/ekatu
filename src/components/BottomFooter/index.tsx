@@ -1,7 +1,11 @@
 import React from 'react'
 import { ContainerBottomFooter } from '../../styles/pages/Footer'
 
-const BottomFooter: React.FC = () => {
+type DTO = {
+  children: JSX.Element
+}
+
+const BottomFooter: React.FC<DTO> = () => {
   return (
     <ContainerBottomFooter>
       <div className="containerCustom">

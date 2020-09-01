@@ -6,7 +6,11 @@ import { ContainerSustentavel } from '../../styles/pages/Sustentavel'
 import img from '../../assets/icon-slide.png'
 import imageTraco from '../../assets/traco.png'
 
-const Sustentavel: React.FC = () => {
+type DTO = {
+  children: JSX.Element
+}
+
+const Sustentavel: React.FC<DTO> = () => {
   return (
     <ContainerSustentavel>
       <div className="boxText">

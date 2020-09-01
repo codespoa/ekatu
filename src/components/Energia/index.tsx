@@ -13,9 +13,10 @@ type EnergiaProps = {
   imgTraco: string
   revert: boolean
   imageContent: string
+  children: JSX.Element
 }
 
-const Energia: React.FC = ({
+const Energia: React.FC<EnergiaProps> = ({
   textMain,
   textSeccond,
   support,
