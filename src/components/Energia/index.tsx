@@ -28,7 +28,9 @@ const Energia: React.FC = ({
 
   return (
     <ContainerEnergia className={revert ? 'revert' : 'normal'}>
-      <div className="containerCustom">
+      <div
+        className={revert ? 'containerCustom revert' : 'containerCustom normal'}
+      >
         <div className="ocean">
           <div className="wave"></div>
           <div className="wave"></div>

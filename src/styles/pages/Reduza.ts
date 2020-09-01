@@ -12,6 +12,7 @@ export const ContainerReduza = styled.section`
   flex-wrap: wrap;
   overflow: hidden;
   min-height: 50vh;
+  margin-top: 12%;
 
   @media (min-width: 1024px) {
     margin: 0 auto;
@@ -86,6 +87,10 @@ export const ContainerReduza = styled.section`
 
           @media (min-width: 1024px) {
             margin: 0;
+          }
+
+          &:hover p {
+            background: ${props => props.theme.colors.green};
           }
 
           p {

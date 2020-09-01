@@ -10,43 +10,35 @@ type DTO = {
 }
 
 const MenuMobile: React.FC = ({ activeMenu }: DTO) => {
-  const MenuMobileContainer = styled.div`
-    &.header__nav {
-      display: ${activeMenu ? 'none' : 'block'};
-    }
-  `
-
   return (
-    <MenuMobileContainer>
-      <ContainerMenuMobile className={activeMenu ? '' : 'header__nav'}>
-        <nav>
-          {/* <div className="image">
+    <ContainerMenuMobile className={activeMenu ? '' : 'header__nav'}>
+      <nav>
+         <div className="image">
           <LogoMenuMobile />
           <NewClose
             className={activeMenu ? 'closeMenuIcon active' : 'closeMenuIcon'}
           />
-        </div> */}
-          <ul>
-            <a href="#">
-              <li>Home</li>
-              <div className="circle"></div>
-            </a>
-            <a href="#">
-              <li>Soluções Energéticas Sustentáveis</li>
-              <div className="circle"></div>
-            </a>
-            <a href="#">
-              <li>Sustentabilidade Empresarial</li>
-              <div className="circle"></div>
-            </a>
+        </div> }
+        <ul>
+          <a href="#">
+            <li>Home</li>
+            <div className="circle"></div>
+          </a>
+          <a href="#">
+            <li>Soluções Energéticas Sustentáveis</li>
+            <div className="circle"></div>
+          </a>
+          <a href="#">
+            <li>Sustentabilidade Empresarial</li>
+            <div className="circle"></div>
+          </a>
 
-            <a className="login" href="#">
-              <li>Login</li>
-            </a>
-          </ul>
-        </nav>
-      </ContainerMenuMobile>
-    </MenuMobileContainer>
+          <a className="login" href="#">
+            <li>Login</li>
+          </a>
+        </ul>
+      </nav>
+    </ContainerMenuMobile>
   )
 }
 

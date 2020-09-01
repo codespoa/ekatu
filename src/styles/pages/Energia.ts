@@ -50,7 +50,7 @@ export const ContainerEnergia = styled.section`
   }
 
   &.revert {
-    flex-direction: row-reverse;
+    flex-direction: row-reverse !important;
     background-color: #fff;
 
     @media (min-width: 1200px) {
@@ -158,7 +158,12 @@ export const ContainerEnergia = styled.section`
         display: flex;
         align-items: center;
         justify-content: center;
+        transition: all 0.2s ease;
         text-decoration: none;
+
+        &:hover {
+          box-shadow: 0px 0px #435ebe, 0em 0 3em #435efe;
+        }
 
         @media (min-width: 1300px) {
           margin-top: 135px;
@@ -244,19 +249,6 @@ export const ContainerEnergia = styled.section`
       transform: translate3d(0, 5px, 0);
     }
   } */
-`
-
-export const RevertContainerEnergia = styled(ContainerEnergia)`
-  .image {
-    order: 2;
-
-    @media (min-width: 1200px) {
-      order: 1;
-    }
-  }
-  .boxText {
-    order: 2;
-  }
 `
 
 export const ContainerQuemSomos = styled(ContainerEnergia)`

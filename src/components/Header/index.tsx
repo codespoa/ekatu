@@ -8,9 +8,6 @@ import styled from 'styled-components'
 import MenuMobile from './../MenuMobile/'
 
 const Header: React.FC = () => {
-  // interface RequestLink = {
-  //   link: String;
-  // }
   const [activeMenu, setActiveMenu] = useState(false)
   const [open, setOpen] = useState(false)
   // const [ activeLinkHome, setActiveLinkHome ] = useState(true)
