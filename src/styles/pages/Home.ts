@@ -7,8 +7,8 @@ export const ContainerHeader = styled.section`
   align-items: center;
   padding: 35px 0;
   background: #f5f7fb;
-  /* position: fixed; */
-  z-index: 9;
+  position: fixed;
+  z-index: 20;
   transition: all 0.5s ease;
 
   @media (min-width: 520px) {

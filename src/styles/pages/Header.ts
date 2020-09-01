@@ -4,7 +4,6 @@ export const HeaderStyle = styled.section`
   display: flex;
   align-items: center;
   position: initial;
-  transition: all 0.5s ease;
 
   @media (min-width: 1300px) {
     padding: 0 30px;

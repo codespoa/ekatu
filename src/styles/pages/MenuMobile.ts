@@ -2,19 +2,22 @@
 import styled from 'styled-components'
 
 export const ContainerMenuMobile = styled.div`
-  /* background-color: ${({ theme }) => theme.colors.purple};
+  background-color: ${({ theme }) => theme.colors.purple};
   width: 100%;
   min-height: 100vh;
   position: initial;
   z-index: 10;
-  transition: all 0.5s ease;
   display: flex;
   justify-content: center;
   position: fixed;
-  top: 0;
+  top: 16%;
   left: 0;
   overflow-y: auto;
   padding: 15% 0;
+
+  @media (min-width: 767px) {
+    top: 12%;
+  }
 
   .image {
     display: flex;
@@ -62,5 +65,5 @@ export const ContainerMenuMobile = styled.div`
         padding: 10px 0;
       }
     }
-  } */
+  }
 `

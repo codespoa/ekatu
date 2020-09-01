@@ -12,6 +12,7 @@ const Header: React.FC = () => {
   //   link: String;
   // }
   const [activeMenu, setActiveMenu] = useState(false)
+  const [open, setOpen] = useState(false)
   // const [ activeLinkHome, setActiveLinkHome ] = useState(true)
   // const [ activeLinkSolucao, setActiveLinkSolucao ] = useState(false)
   // const [ activeLinkSustentabilidade, setActiveLinkSustentabilidade ] = useState(false)
@@ -40,8 +41,9 @@ const Header: React.FC = () => {
   }
 
   const MenuMobileContainer = styled.div`
-    &.OpenMenuMobile {
-      visibility: ${activeMenu ? 'hidden' : 'visible'};
+    .header__nav {
+      transform: translateX(${activeMenu ? 0 : '100%'});
+      transition: all 0.5s ease;
     }
   `
 
@@ -75,12 +77,16 @@ const Header: React.FC = () => {
               <MenuDesktop />
             </a>
           </ul>
-          <a className="menu-mobile" onClick={() => setActiveMenu(!activeMenu)}>
+          <a
+            className="menu-mobile"
+            activeMenu={activeMenu}
+            onClick={() => setActiveMenu(!activeMenu)}
+          >
             <MenuDesktop />
           </a>
         </HeaderStyle>
       </ContainerHeader>
-      <MenuMobileContainer className="OpenMenuMobile">
+      <MenuMobileContainer className={activeMenu ? '' : 'header__nav'}>
         <MenuMobile />
       </MenuMobileContainer>
     </>
