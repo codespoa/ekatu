@@ -56,6 +56,7 @@ export const ContainerReduza = styled.section`
       display: flex;
       align-items: center;
       flex-direction: column;
+      position: relative;
 
       @media (min-width: 1024px) {
         flex-direction: row;
@@ -106,6 +107,31 @@ export const ContainerReduza = styled.section`
             width: 16px;
             height: 16px;
           }
+        }
+      }
+
+      .tooltipCustom {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 16px 24px;
+        background-color: ${props => props.theme.colors.purple};
+        border-radius: 10px;
+        top: -26px;
+        left: 46px;
+        img {
+          width: 12px;
+          transform: translateX(-34px);
+        }
+
+        h5 {
+          color: #fff;
+          font-size: 13px;
+          line-height: 15px;
+          max-width: 191px;
         }
       }
 
