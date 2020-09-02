@@ -13,33 +13,6 @@ type DTO = {
 
 const Header: React.FC<DTO> = () => {
   const [activeMenu, setActiveMenu] = useState(false)
-  // const [open, setOpen] = useState(false)
-  // const [ activeLinkHome, setActiveLinkHome ] = useState(true)
-  // const [ activeLinkSolucao, setActiveLinkSolucao ] = useState(false)
-  // const [ activeLinkSustentabilidade, setActiveLinkSustentabilidade ] = useState(false)
-
-  // function openMenuDesk() {
-  //   alert('teste')
-  // }
-
-  // function openMenuMobile() {
-  //   alert('teste')
-  // }
-
-  function activePage() {
-    // if(link == 1) {
-    //   setActiveLinkSolucao(false)
-    //   setActiveLinkSustentabilidade(false)
-    //   setActiveLinkHome(true)
-    //   return;
-    // }
-    // if(link == 2) {
-    //   setActiveLink(true)
-    // }
-    // if(link == 3) {
-    //   setActiveLink(true)
-    // }
-  }
 
   const MenuMobileContainer = styled.div`
     .header__nav {
@@ -56,16 +29,16 @@ const Header: React.FC<DTO> = () => {
             <LogoHeader />
           </div>
           <ul>
-            <a onClick={activePage}>
+            <a>
               <li>Home</li>
               <div className="circle"></div>
               {/* <div className={activeLinkHome && 'active'}></div> */}
             </a>
-            <a onClick={activePage}>
+            <a>
               <li>Soluções Energéticas Sustentáveis</li>
               <div className="circle"></div>
             </a>
-            <a onClick={activePage}>
+            <a>
               <li>Sustentabilidade Empresarial</li>
               <div className="circle"></div>
             </a>
