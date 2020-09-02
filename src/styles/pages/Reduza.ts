@@ -111,7 +111,7 @@ export const ContainerReduza = styled.section`
       }
 
       .tooltipCustom {
-        display: flex;
+        display: none;
         justify-content: center;
         align-items: center;
         position: absolute;
@@ -120,11 +120,30 @@ export const ContainerReduza = styled.section`
         padding: 16px 24px;
         background-color: ${props => props.theme.colors.purple};
         border-radius: 10px;
-        top: -26px;
         left: 46px;
+        top: 25px;
+        @media (min-width: 1023px) {
+          display: flex;
+          top: -26px;
+          top: 157px;
+        }
+
+        @media (min-width: 1200px) {
+          top: -26px;
+        }
+
         img {
           width: 12px;
           transform: translateX(-34px);
+
+          @media (min-width: 998px) {
+            position: absolute;
+            top: 23px;
+          }
+
+          @media (min-width: 1200px) {
+            position: initial;
+          }
         }
 
         h5 {
