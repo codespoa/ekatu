@@ -49,7 +49,9 @@ export const ContainerEnergia = styled.section`
     }
 
     &.revert {
-      flex-direction: row-reverse !important;
+      @media (min-width: 998px) {
+        flex-direction: row-reverse !important;
+      }
       background-color: #fff;
 
       @media (min-width: 1200px) {
