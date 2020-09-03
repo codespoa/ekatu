@@ -7,7 +7,8 @@ import ImgAneel from '../../assets/aneel.svg'
 import ImgArrow from '../../assets/arrow-button-grey.svg'
 
 type DTO = {
-  children: JSX.Element
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  children?: any
 }
 
 const Footer: React.FC<DTO> = () => {

@@ -2,7 +2,8 @@ import React from 'react'
 import { ContainerBottomFooter } from '../../styles/pages/Footer'
 
 type DTO = {
-  children: JSX.Element
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  children?: any
 }
 
 const BottomFooter: React.FC<DTO> = () => {

@@ -2,7 +2,8 @@ import React from 'react'
 import { ContainerMenuMobile } from '../../styles/pages/MenuMobile'
 
 type DTO = {
-  children: JSX.Element
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  children?: any
 }
 
 const MenuMobile: React.FC<DTO> = () => {

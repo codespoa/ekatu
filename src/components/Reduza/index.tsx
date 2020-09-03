@@ -6,7 +6,8 @@ import imgPaisagem from '../../assets/image-paisagem.png'
 import arrowPurple from '../../assets/arrow-purple.png'
 
 type DTO = {
-  children: JSX.Element
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  children?: any
 }
 
 const Reduza: React.FC<DTO> = () => {

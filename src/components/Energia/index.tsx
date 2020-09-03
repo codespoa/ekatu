@@ -6,14 +6,15 @@ import ImageArrow from '../../assets/arrow-button.svg'
 import MouseDown from '../../assets/mouse-down.svg'
 
 type EnergiaProps = {
-  support: string
-  textMain: string
-  textSeccond: string
-  textButton: string
-  imgTraco: string
-  revert: boolean
-  imageContent: string
-  children: JSX.Element
+  support?: string
+  textMain?: string
+  textSeccond?: string
+  textButton?: string
+  imgTraco?: string
+  revert?: boolean
+  imageContent?: string
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  children?: any
 }
 
 const Energia: React.FC<EnergiaProps> = ({

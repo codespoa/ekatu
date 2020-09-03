@@ -5,13 +5,14 @@ import { ContainerQuemSomos } from '../../styles/pages/QuemSomos'
 import ImageArrow from '../../assets/arrow-button-grey.svg'
 
 type QuemSomosProps = {
-  support: string
-  textMain: string
-  textSeccond: string
-  textButton: string
-  imgTraco: string
-  imageContent: string
-  children: JSX.Element
+  support?: string
+  textMain?: string
+  textSeccond?: string
+  textButton?: string
+  imgTraco?: string
+  imageContent?: string
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  children?: any
 }
 
 const QuemSomos: React.FC<QuemSomosProps> = ({

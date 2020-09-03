@@ -10,9 +10,10 @@ import { ContainerMenuMobile } from '../../styles/pages/MenuMobile'
 import NewClose from '../../assets/new-close.svg'
 
 type DTO = {
-  children?: ReactNode
   activemenu?: string
   setActiveMenu?: string
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  children?: any
 }
 
 const MenuMobileContainer = styled.div`
@@ -75,9 +76,13 @@ const Header: React.FC<DTO> = () => {
           <nav>
             <div className="image">
               <LogoHeader />
-              <NewClose
-                className="closeMenuIcon"
-                onClick={() => setActiveMenu('not')}
+              <img
+                src={NewClose}
+                alt="Ekatu"
+                className="closMenuIcon"
+                onClick={() => {
+                  setActiveMenu('')
+                }}
               />
             </div>
             <ul>

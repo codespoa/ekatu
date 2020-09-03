@@ -1,4 +1,4 @@
-import React, { ReactNode } from 'react'
+import React from 'react'
 import Carousel from 'react-bootstrap/Carousel'
 import { ContainerSustentavel } from '../../styles/pages/Sustentavel'
 
@@ -6,7 +6,8 @@ import img from '../../assets/icon-slide.png'
 import imageTraco from '../../assets/traco.png'
 
 type DTO = {
-  children: ReactNode
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  children?: any
 }
 
 const Sustentavel: React.FC<DTO> = () => {

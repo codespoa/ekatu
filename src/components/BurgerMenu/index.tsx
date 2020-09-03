@@ -6,7 +6,8 @@ const StyledBurger = styled.div``
 type DTO = {
   openBurger: boolean
   setOpenBurger: boolean
-  children: JSX.Element
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  children?: any
 }
 
 const Burger: React.FC<DTO> = () => {

@@ -15,7 +15,12 @@ import imageBosque from '../assets/bosque.png'
 import imageElice from '../assets/elice.png'
 import imageTraco from '../assets/traco.png'
 
-const Home: React.FC = () => {
+type DTO = {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  children?: any
+}
+
+const Home: React.FC<DTO> = () => {
   return (
     <ContainerMain>
       <Head>
