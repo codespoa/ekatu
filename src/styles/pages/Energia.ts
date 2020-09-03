@@ -55,8 +55,8 @@ export const ContainerEnergia = styled.section`
       background-color: #fff;
 
       @media (min-width: 1200px) {
-        background-color: transparent;
-        background-image: url(${imgGrey});
+        /* background-color: transparent; */
+        /* background-image: url(${imgGrey}); */
       }
     }
   }
@@ -66,8 +66,8 @@ export const ContainerEnergia = styled.section`
     background-color: #fff;
 
     @media (min-width: 1200px) {
-      background-color: transparent;
-      background-image: url(${imgGrey});
+      /* background-color: transparent;
+      background-image: url(${imgGrey}); */
     }
   }
 

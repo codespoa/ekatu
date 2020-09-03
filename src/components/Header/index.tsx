@@ -1,4 +1,4 @@
-import React, { useState, ReactNode } from 'react'
+import React, { useState } from 'react'
 
 import { HeaderStyle } from '../../styles/pages/Header'
 import LogoHeader from '../../assets/logo-ekatu.svg'
@@ -7,7 +7,7 @@ import { ContainerHeader } from '../../styles/pages/Home'
 import styled from 'styled-components'
 
 import { ContainerMenuMobile } from '../../styles/pages/MenuMobile'
-import NewClose from '../../assets/new-close.svg'
+import NewClose from '../../assets/new-close.png'
 
 type DTO = {
   activemenu?: string
@@ -79,7 +79,7 @@ const Header: React.FC<DTO> = () => {
               <img
                 src={NewClose}
                 alt="Ekatu"
-                className="closMenuIcon"
+                className="closeMenuIcon"
                 onClick={() => {
                   setActiveMenu('')
                 }}

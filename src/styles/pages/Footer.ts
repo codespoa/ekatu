@@ -299,11 +299,15 @@ export const ContainerBottomFooter = styled.section`
   .faleConosco {
     position: absolute;
     bottom: 0;
-    right: 80px;
     border-radius: 15px 15px 0px 0px;
     background-color: ${props => props.theme.colors.green};
-    padding: 15px 55px;
+    padding: 7px 25px;
     text-decoration: none;
+
+    @media (min-width: 767px) {
+      right: 80px;
+      padding: 15px 55px;
+    }
 
     p {
       font-weight: normal;

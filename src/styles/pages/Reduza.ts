@@ -34,6 +34,12 @@ export const ContainerReduza = styled.section`
     padding: 0 40px;
   }
 
+  .textPrimary {
+    @media (min-width: 1200px) {
+      margin-top: 25px;
+    }
+  }
+
   .containerCustom {
     display: flex;
     flex-direction: column;

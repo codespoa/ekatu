@@ -45,8 +45,10 @@ const Reduza: React.FC<DTO> = () => {
                 <li
                   onClick={() => {
                     setShowContent('l2')
-                    setShowContentText('teste 2')
-                    setShowContentSupport('tooltip 2')
+                    setShowContentText('Eficientização Energética')
+                    setShowContentSupport(
+                      'É possível interpretar e analisar o que será melhor para sua empresa.'
+                    )
                   }}
                 >
                   <p className={showContent === 'l2' ? 'green' : ''}></p>
@@ -57,8 +59,10 @@ const Reduza: React.FC<DTO> = () => {
                 <li
                   onClick={() => {
                     setShowContent('l3')
-                    setShowContentText('teste 3')
-                    setShowContentSupport('tooltip 3')
+                    setShowContentText(
+                      'Alta Tecnologia em iluminação: economia e durabilidade.'
+                    )
+                    setShowContentSupport('iluminação')
                   }}
                 >
                   <p className={showContent === 'l3' ? 'green' : ''}></p>
@@ -69,8 +73,10 @@ const Reduza: React.FC<DTO> = () => {
                 <li
                   onClick={() => {
                     setShowContent('l4')
-                    setShowContentText('teste 4')
-                    setShowContentSupport('tooltip 4')
+                    setShowContentText(
+                      'Equipamentos de baico consumo (lamp. Eletronicas T12 por T5)'
+                    )
+                    setShowContentSupport('Fazer o básico')
                   }}
                 >
                   <p className={showContent === 'l4' ? 'green' : ''}></p>
@@ -81,8 +87,10 @@ const Reduza: React.FC<DTO> = () => {
                 <li
                   onClick={() => {
                     setShowContent('l5')
-                    setShowContentText('teste 5')
-                    setShowContentSupport('tooltip 5')
+                    setShowContentText(
+                      'Software de gerenciamento de enelgia (local)'
+                    )
+                    setShowContentSupport('Monitorar e melhorar')
                   }}
                 >
                   <p className={showContent === 'l5' ? 'green' : ''}></p>
@@ -93,8 +101,8 @@ const Reduza: React.FC<DTO> = () => {
                 <li
                   onClick={() => {
                     setShowContent('l6')
-                    setShowContentText('teste 6')
-                    setShowContentSupport('tooltip 6')
+                    setShowContentText('Medidores de qualidade de energia')
+                    setShowContentSupport('Medir')
                   }}
                 >
                   <p className={showContent === 'l6' ? 'green' : ''}></p>
