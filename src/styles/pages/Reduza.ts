@@ -12,7 +12,6 @@ export const ContainerReduza = styled.section`
   flex-wrap: wrap;
   overflow: hidden;
   min-height: 50vh;
-  margin-top: 12%;
 
   @media (min-width: 1024px) {
     margin: 0 auto;

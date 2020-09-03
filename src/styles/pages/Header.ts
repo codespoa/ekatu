@@ -67,9 +67,9 @@ export const HeaderStyle = styled.section`
       align-items: center;
       position: relative;
       cursor: pointer;
-      margin-right: 20px;
+      margin-right: 30px;
 
-      @media (min-width: 1300px) {
+      @media (min-width: 1400px) {
         margin-right: 45px;
       }
 

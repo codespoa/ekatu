@@ -10,19 +10,24 @@ export const ContainerMenuMobile = styled.div`
   display: flex;
   justify-content: center;
   position: fixed;
-  top: 16%;
+  top: 0;
   left: 0;
   overflow-y: auto;
   padding: 15% 0;
 
+  @media (min-width: 550px) {
+    padding: 0;
+  }
+
   @media (min-width: 767px) {
-    top: 12%;
+    padding: 15% 0;
   }
 
   .image {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    padding: 20px 0;
 
     .closeMenuIcon {
       width: 30px;
@@ -32,7 +37,7 @@ export const ContainerMenuMobile = styled.div`
         display: block;
       }
 
-      @media (min-width: 986px) {
+      @media (min-width: 1200px) {
         display: none;
       }
     }

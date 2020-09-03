@@ -1,5 +1,4 @@
-import React from 'react'
-import { Button } from 'react-bootstrap'
+import React, { ReactNode } from 'react'
 import Carousel from 'react-bootstrap/Carousel'
 import { ContainerSustentavel } from '../../styles/pages/Sustentavel'
 
@@ -7,7 +6,7 @@ import img from '../../assets/icon-slide.png'
 import imageTraco from '../../assets/traco.png'
 
 type DTO = {
-  children: JSX.Element
+  children: ReactNode
 }
 
 const Sustentavel: React.FC<DTO> = () => {
@@ -24,7 +23,7 @@ const Sustentavel: React.FC<DTO> = () => {
         </div>
       </div>
       <Carousel indicators={false} className="carrouselSlide">
-        <Carousel.Item interval={1000}>
+        <Carousel.Item>
           <img className="d-block m-auto" src={img} alt="First slide" />
           <Carousel.Caption className="carrouselCaption">
             <h3>Rudi Duarte</h3>
@@ -37,7 +36,7 @@ const Sustentavel: React.FC<DTO> = () => {
             <span>Razzo Software House</span>
           </Carousel.Caption>
         </Carousel.Item>
-        <Carousel.Item interval={500}>
+        <Carousel.Item>
           <img className="d-block m-auto" src={img} alt="Third slide" />
           <Carousel.Caption className="carrouselCaption">
             <h3>Neomar</h3>
